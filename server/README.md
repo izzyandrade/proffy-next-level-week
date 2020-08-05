@@ -2,9 +2,9 @@
 
 - yarn add | npm install
 
-- "start": "tsnd --transpile-only --ignore-watch node_modules --respawn src/server.ts",
-- "knex:migrate": "knex --knexfile knexfile.ts migrate:latest",
-- "knex:migrate:rollback": "knex --knexfile knexfile.ts migrate:rollback"
+- yarn start ----> "tsnd --transpile-only --ignore-watch node_modules --respawn src/server.ts",
+- yarn knex:migrate ----> "knex --knexfile knexfile.ts migrate:latest",
+- yarn knex:migrate:rollback ----> "knex --knexfile knexfile.ts migrate:rollback"
 
 # Funcionalidades
 
