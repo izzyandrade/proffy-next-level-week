@@ -6,6 +6,7 @@ import "./styles.css";
 
 interface SendProps {
   title: String;
+  description?: String;
 }
 
 const PageHeader: React.FC<SendProps> = (props) => {
@@ -19,6 +20,7 @@ const PageHeader: React.FC<SendProps> = (props) => {
       </div>
       <div className="header-content">
         <strong>{props.title}</strong>
+        {props.description && <p>{props.description}</p>}
         {props.children}
       </div>
     </header>
